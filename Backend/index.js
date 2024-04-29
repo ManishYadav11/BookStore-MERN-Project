@@ -5,7 +5,7 @@ import dotenv from "dotenv";
 import bookRoute from "./route/book.route.js";
 import userRoute from "./route/user.route.js";
 
-dotenv.config(); // Load environment variables from .env file
+dotenv.config({ path: 'config.env' }); // Load environment variables from config.env file
 
 const app = express();
 
